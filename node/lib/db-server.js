@@ -79,7 +79,7 @@ require('./passport')(passport, config)
 
 routes.init(app, auth, passport);
 
-var port = process.env.VCAP_APP_PORT || 8180;
+var port = process.env.VCAP_APP_PORT || 8080;
 if(process.env.VCAP_SERVICES){
   var services = JSON.parse(process.env.VCAP_SERVICES);
   var dbcreds = services['mongodb'][0].credentials;

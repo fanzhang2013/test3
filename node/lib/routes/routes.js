@@ -21,7 +21,7 @@
  
 
   exports.init = function (app, auth, passport) {
-    //movies.create();
+    movies.create();
     // app.get('/', function (req, res)
     // {
     //   if(req.user!=null){
