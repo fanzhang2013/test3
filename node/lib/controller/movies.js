@@ -4,8 +4,7 @@ var request = require("request");
 
 exports.list= function( req, res ) {
     var input = req.query
-    var options = {sort:[['_id','desc']]}
-    Movie.find({}, null, null, function(error, result){
+    Movie.find({}, null, {limit:25}, function(error, result){
     if(error) {
         console.log(error);
     } else {
